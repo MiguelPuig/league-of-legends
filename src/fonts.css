@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "frizquadratabold";
+  src: url("~@/assets/fonts/friz_quadrata_bold-webfont.woff2") format("woff2"),
+    url("~@/assets/fonts/friz_quadrata_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "friz_quadrataregular_italic";
+  src: url("~@/assets/fonts/friz_quadrata_italic-webfont.woff2") format("woff2"),
+    url("~@/assets/fonts/friz_quadrata_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "friz_quadrataregular";
+  src: url("~@/assets/fonts/friz_quadrata_regular-webfont.woff2")
+      format("woff2"),
+    url("~@/assets/fonts/friz_quadrata_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
