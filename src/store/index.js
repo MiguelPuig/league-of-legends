@@ -43,7 +43,7 @@ export default new Vuex.Store({
     },
     getChampion(context, name) {
       fetch(
-        "http://ddragon.leagueoflegends.com/cdn/9.21.1/data/en_US/champion/" +
+        "https://ddragon.leagueoflegends.com/cdn/9.21.1/data/en_US/champion/" +
           name +
           ".json",
         {
@@ -65,7 +65,7 @@ export default new Vuex.Store({
     },
     getAllItems(context) {
       fetch(
-        "http://ddragon.leagueoflegends.com/cdn/9.22.1/data/en_US/item.json",
+        "https://ddragon.leagueoflegends.com/cdn/9.22.1/data/en_US/item.json",
         {
           method: "GET"
         }
@@ -88,7 +88,7 @@ export default new Vuex.Store({
     },
     getItemDetail(context, itemId) {
       fetch(
-        "http://ddragon.leagueoflegends.com/cdn/9.22.1/data/en_US/item.json",
+        "https://ddragon.leagueoflegends.com/cdn/9.22.1/data/en_US/item.json",
         {
           method: "GET"
         }

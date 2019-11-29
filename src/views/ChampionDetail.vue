@@ -39,6 +39,8 @@
           <v-tabs class="tabsTitle" v-model="tab" background-color="transparent">
             <v-tab class="tabTitle">Description</v-tab>
             <v-tab class="tabTitle">Stats</v-tab>
+            <v-tab class="tabTitle">Detail</v-tab>
+            
           </v-tabs>
 
           <v-tabs-items v-model="tab">
@@ -56,19 +58,33 @@
               <v-card flat color="white">
                 <v-card-text class="chart">
                   <Info :chart="getChamp" :champName="champName"></Info>
+                </v-card-text>
+              </v-card>
+            </v-tab-item>
+         
 
-                  <!-- <Stats
+            <v-tab-item>
+              <v-card flat color="white">
+                <v-card-text class="chart">
+                   <Stats
                     v-for="(stat, key, i) in getChamp[champName].stats"
                     :key="i"
                     :stat="stat"
                     :name="key"
-                  />-->
+                    
+                  />
+                  <Stats :chart="getChamp" :champName="champName"/>
                 </v-card-text>
               </v-card>
             </v-tab-item>
           </v-tabs-items>
+
+
         </v-card>
       </div>
+
+
+     
 
       <!-- CHAMPION ABILITIES -->
       <div class="title2">
@@ -368,5 +384,6 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  
 }
 </style>

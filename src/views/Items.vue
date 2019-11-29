@@ -116,10 +116,12 @@ export default {
         ...new Set(
           Object.values(this.getItems)
             .map(item => {
-              return item.tags;
+              return item.tags;             
             })
+            
             .flat()
         )
+        
       ];
     },
     // FILTER ITEMS
